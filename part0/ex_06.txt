@@ -1,0 +1,18 @@
+note over browser:
+User writes smth into form field 
+and clicks "Submit" button
+end note
+
+note over browser:
+JS code prevents default handling of an event
+end note
+
+note over browser:
+JS code updates the list of notes on the page
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+server adds a new note to an array of notes
+end note
